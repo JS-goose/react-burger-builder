@@ -1,7 +1,7 @@
-import React from 'react';
+import React, {Component} from 'react';
 import styles from './BurgerIngredients.module.css';
 
-const burgerIngredient = (props) => {
+class BurgerIngredients extends Component {
   let ingredient = null;
 
   switch (props.type) {
@@ -32,6 +32,10 @@ const burgerIngredient = (props) => {
       ingredient = null;
   }
   return ingredient;
-};
 
-export default burgerIngredient;
+  render() {
+      return(<p>Test</p>)
+  }
+}
+
+export default BurgerIngredients;
