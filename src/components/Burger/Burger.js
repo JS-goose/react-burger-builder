@@ -6,6 +6,8 @@ const burger = (props) => {
   return (
     <div className={styles['Burger']}>
       <BurgerIngredients type="bread-top" />
+      <BurgerIngredients type="salad" />
+      <BurgerIngredients type="bacon" />
       <BurgerIngredients type="cheese" />
       <BurgerIngredients type="meat" />
       <BurgerIngredients type="bread-bottom" />
