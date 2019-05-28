@@ -105,6 +105,13 @@
     border-radius: 20px;
 }
 
+.Tomato {
+  width: 80%;
+  height: 3%;
+  background: red;
+  margin: 2% auto;
+}
+
 .Bacon {
     width: 80%;
     height: 3%;
