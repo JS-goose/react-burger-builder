@@ -1,6 +1,7 @@
 import React from 'react';
 import styles from './Burger.module.css';
 import BurgerIngredients from './Ingredients/BurgerIngredients';
+import { read } from 'fs';
 
 const burger = (props) => {
   let transformedIngredients = Object.keys(props.ingredients).map((itemKey) => {
@@ -10,7 +11,7 @@ const burger = (props) => {
   }).flat(2);
   
   if (transformedIngredients.length === 0) {
-    transformedIngredients = <p>Please add some ingredients!</p>
+    transformedIngredients = <p style={style}>Please add some ingredients!</p>
   }
   return (
     <div className={styles['Burger']}>
@@ -20,5 +21,9 @@ const burger = (props) => {
     </div>
   );
 };
+
+const style = {
+  color: 'red',
+}
 
 export default burger;
