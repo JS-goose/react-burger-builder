@@ -1,0 +1,7 @@
+.BuildControls {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    background-color: #f8c19c;
+    box-shadow: 0px 1px 1px rgb(199, 199, 199)
+}
