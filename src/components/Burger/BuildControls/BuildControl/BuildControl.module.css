@@ -7,7 +7,7 @@
 .BuildControl button {
   font: inherit;
   display: block;
-  width: 70px;
+  width: 100px;
   padding: 5px;
   margin: 0 5px;
   cursor: pointer;
@@ -55,6 +55,18 @@
 .BuildControl .More:hover,
 .BuildControl .More:active {
   background-color: rgb(224, 189, 143);
-  color: green;
+  color: rgb(14, 182, 14);
   font-weight: bold;
+}
+
+.BuildControl .More:hover:after,
+.BuildControl .More:hover:before,
+.BuildControl .More:active {
+  content: ' + ';
+}
+
+.BuildControl .Less:hover:after,
+.BuildControl .Less:hover:before,
+.BuildControl .Less:active {
+  content: ' - ';
 }
