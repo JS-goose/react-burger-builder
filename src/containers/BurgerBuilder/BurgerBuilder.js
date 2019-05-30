@@ -8,7 +8,7 @@ const INGREDIENT_PRICES = {
   cheese: 0.5,
   bacon: 0.75,
   meat: 1.25,
-}
+};
 
 class BurgerBuilder extends Component {
   state = {
@@ -25,19 +25,22 @@ class BurgerBuilder extends Component {
   addIngredient = (type) => {
     const oldIngCount = this.state.ingredients[type];
     const updatedIngCount = oldIngCount + 1;
-    const updatedIngredients = {...this.state.ingredients};
+    const updatedIngredients = { ...this.state.ingredients };
     updatedIngredients[type] = updatedIngCount;
-  }
+  };
 
   removeIngredient = (type) => {
-    console.log('remove',type);
-  }
+    console.log('remove', type);
+  };
 
   render() {
     return (
       <React.Fragment>
         <Burger ingredients={this.state.ingredients} />
-        <BuildControls addIngredient={this.addIngredient} removeIngredient={this.removeIngredient}/>
+        <BuildControls
+          addIngredient={this.addIngredient}
+          removeIngredient={this.removeIngredient}
+        />
       </React.Fragment>
     );
   }
