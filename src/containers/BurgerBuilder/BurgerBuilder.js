@@ -13,18 +13,18 @@ class BurgerBuilder extends Component {
   };
 
   addIngredient = (type) => {
-    console.log(type);
+    console.log('add',type);
   }
 
   removeIngredient = (type) => {
-
+    console.log('remove',type);
   }
 
   render() {
     return (
       <React.Fragment>
         <Burger ingredients={this.state.ingredients} />
-        <BuildControls addIngredient={this.addIngredient}/>
+        <BuildControls addIngredient={this.addIngredient} removeIngredient={this.removeIngredient}/>
       </React.Fragment>
     );
   }
