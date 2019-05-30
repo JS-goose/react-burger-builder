@@ -10,6 +10,7 @@ class BurgerBuilder extends Component {
       cheese: 0,
       meat: 0,
     },
+    totalPrice: 4,
   };
 
   addIngredient = (type) => {
