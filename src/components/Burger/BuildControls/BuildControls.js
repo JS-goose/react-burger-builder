@@ -13,7 +13,7 @@ const controls = [
 const buildControls = (props) => (
   <React.Fragment>
     <div className={styles['BuildControls']}>
-      <p className={styles['price-display']}>Total Price: ${props.price}</p>
+      <p className={styles['price-display']}>Total Price: ${props.price.toFixed(2)}</p>
 
       {controls.map((item) => (
         <BuildControl
