@@ -46,12 +46,22 @@ class BurgerBuilder extends Component {
   };
 
   render() {
+    // Ingredients copy to check how many of each ingredient
+    const disabledInfo = {
+      ...this.state.ingredients
+    }
+    // Checks if the ingredients number is 0
+    for (let key in disabledInfo) {
+      disabledInfo[key] = disabledInfo[key] <= 0
+    }
+
     return (
       <React.Fragment>
         <Burger ingredients={this.state.ingredients} />
         <BuildControls
           addIngredient={this.addIngredient}
           removeIngredient={this.removeIngredient}
+          disabledInfo={disabledInfo}
         />
       </React.Fragment>
     );
