@@ -11,6 +11,11 @@ const controls = [
 ];
 
 const buildControls = (props) => (
+  <React.Fragment>
+    <div className={styles['price-display']}> 
+      Total Price: ${props.price}
+    </div>
+  
   <div className={styles['BuildControls']}>
     {controls.map((item) => 
         <BuildControl
@@ -22,6 +27,7 @@ const buildControls = (props) => (
         />
     )}
   </div>
+  </React.Fragment>
 );
 
 export default buildControls;
