@@ -19,6 +19,7 @@ const buildControls = (props) => (
           removeIngredient={() => props.removeIngredient(item.type)}
           key={item.label}
           label={item.label}
+          disabledInfo={props.disabledInfo}
         />
       );
     })}
