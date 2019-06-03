@@ -26,10 +26,17 @@
   border: 1px solid #685952;
   border-radius: 2px;
   background-color: rgb(4, 160, 4);
-  font-weight: 900;
   font-size: 1.01rem;
   cursor: pointer;
   box-shadow: 1px 1px 5px rgb(117, 116, 116);
+  color: white;
+}
+
+.checkout-button:hover,
+.checkout-button:active {
+  color: black;
+  font-weight: 900;
+  border: 1px solid #3a312e;
 }
 
 .checkout-button:disabled {
@@ -37,4 +44,20 @@
   border: 1px solid gray;
   background-color: rgb(75, 73, 73);
   color: rgb(173, 173, 173);
+}
+
+.checkout-button:not(:disabled) {
+  animation: ready 0.3s linear;
+}
+
+@keyframes ready {
+  0% {
+    transform: scale(1);
+  }
+  60% {
+    transform: scale(1.1);
+  }
+  100% {
+    transform: scale(1);
+  }
 }
