@@ -12,12 +12,10 @@ const controls = [
 
 const buildControls = (props) => (
   <React.Fragment>
-    <div className={styles['price-display']}> 
-      Total Price: ${props.price}
-    </div>
-  
-  <div className={styles['BuildControls']}>
-    {controls.map((item) => 
+    <div className={styles['BuildControls']}>
+      <p className={styles['price-display']}>Total Price: ${props.price}</p>
+
+      {controls.map((item) => (
         <BuildControl
           addIngredient={() => props.addIngredient(item.type)}
           removeIngredient={() => props.removeIngredient(item.type)}
@@ -25,8 +23,8 @@ const buildControls = (props) => (
           label={item.label}
           disabled={props.disabled[item.type]}
         />
-    )}
-  </div>
+      ))}
+    </div>
   </React.Fragment>
 );
 
