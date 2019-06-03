@@ -10,4 +10,10 @@
   border: 1px solid #a38475;
   border-radius: 2px;
   padding: 0 5px;
+  text-align: center;
+}
+
+.price-display {
+  font-weight: 900;
+  font-size: 1.1rem;
 }
