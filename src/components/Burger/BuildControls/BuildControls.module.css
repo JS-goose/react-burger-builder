@@ -1,8 +1,8 @@
 .BuildControls {
   display: flex;
   flex-direction: column;
-  background-color: #ff9751;
-  box-shadow: 1px 1px 5px rgb(199, 199, 199);
+  background-color: rgba(77, 77, 77, 0.6);
+  box-shadow: 1px 1px 5px rgb(110, 110, 110);
   width: 30%;
   margin: auto;
   margin-top: 5%;
@@ -10,6 +10,7 @@
   border-radius: 2px;
   padding: 0 5px 10px 5px;
   text-align: center;
+  color: white;
 }
 
 .price-display {
