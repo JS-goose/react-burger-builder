@@ -11,21 +11,21 @@ const controls = [
 ];
 
 const buildControls = (props) => (
-  <React.Fragment>
-    <div className={styles['BuildControls']}>
-      <p className={styles['price-display']}>Total Price: ${props.price.toFixed(2)}</p>
+  <div className={styles['BuildControls']}>
+    <p className={styles['price-display']}>Total Price: ${props.price.toFixed(2)}</p>
 
-      {controls.map((item) => (
-        <BuildControl
-          addIngredient={() => props.addIngredient(item.type)}
-          removeIngredient={() => props.removeIngredient(item.type)}
-          key={item.label}
-          label={item.label}
-          disabled={props.disabled[item.type]}
-        />
-      ))}
-    </div>
-  </React.Fragment>
+    {controls.map((item) => (
+      <BuildControl
+        addIngredient={() => props.addIngredient(item.type)}
+        removeIngredient={() => props.removeIngredient(item.type)}
+        key={item.label}
+        label={item.label}
+        disabled={props.disabled[item.type]}
+      />
+    ))}
+
+    <button className={styles['checkout']}>CHECK OUT</button>
+  </div>
 );
 
 export default buildControls;
