@@ -1,7 +1,6 @@
 .BuildControls {
   display: flex;
   flex-direction: column;
-  align-content: center;
   background-color: #ff9751;
   box-shadow: 1px 1px 5px rgb(199, 199, 199);
   width: 30%;
@@ -9,11 +8,33 @@
   margin-top: 5%;
   border: 1px solid #a38475;
   border-radius: 2px;
-  padding: 0 5px;
+  padding: 0 5px 10px 5px;
   text-align: center;
 }
 
 .price-display {
   font-weight: 900;
   font-size: 1.1rem;
+}
+
+.checkout-button {
+  justify-content: center;
+  margin-top: 10px;
+  width: 40%;
+  align-self: center;
+  padding: 10px;
+  border: 1px solid #685952;
+  border-radius: 2px;
+  background-color: rgb(4, 160, 4);
+  font-weight: 900;
+  font-size: 1.01rem;
+  cursor: pointer;
+  box-shadow: 1px 1px 5px rgb(117, 116, 116);
+}
+
+.checkout-button:disabled {
+  cursor: not-allowed;
+  border: 1px solid gray;
+  background-color: rgb(75, 73, 73);
+  color: rgb(173, 173, 173);
 }

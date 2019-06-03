@@ -24,7 +24,7 @@ const buildControls = (props) => (
       />
     ))}
 
-    <button className={styles['checkout']}>CHECK OUT</button>
+    <button className={styles['checkout-button']}>CHECK OUT</button>
   </div>
 );
 
