@@ -20,7 +20,23 @@ class BurgerBuilder extends Component {
       meat: 0,
     },
     totalPrice: 4,
+    purchasable: false,
   };
+
+  updatePurchaseState() {
+    const ingredients = {
+      ...this.state.ingredients,
+    };
+    const total = Object.keys(ingredients)
+      .map((key) => {
+        return ingredients[key];
+      })
+      .reduce((sum, element) => {
+        return sum + element;
+      }, 0);
+      
+      this.setState({purchasable: total > 0})
+  }
 
   addIngredient = (type) => {
     const updatedIngCount = this.state.ingredients[type] + 1;
@@ -48,11 +64,11 @@ class BurgerBuilder extends Component {
   render() {
     // Ingredients copy to check how many of each ingredient
     const disabledInfo = {
-      ...this.state.ingredients
-    }
+      ...this.state.ingredients,
+    };
     // Checks if the ingredients number is 0
     for (let key in disabledInfo) {
-      disabledInfo[key] = disabledInfo[key] <= 0
+      disabledInfo[key] = disabledInfo[key] <= 0;
     }
 
     return (
