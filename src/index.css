@@ -2,5 +2,6 @@ body {
   margin: 0;
   padding: 0;
   font-family: "Open Sans", sans-serif;
+  /* Image courtesy of Lukas Blazek https://unsplash.com/@goumbik */
   background: url('./assets/app-background-img.jpg')center/cover no-repeat fixed;
 }
