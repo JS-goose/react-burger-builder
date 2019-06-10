@@ -1,0 +1,5 @@
+.Modal-container {
+    color: orange;
+    background-color: rgba(150, 150, 150, 0.4);
+    z-index: 1;
+}
