@@ -24,7 +24,9 @@ const buildControls = (props) => (
       />
     ))}
 
-    <button className={styles['checkout-button']}>CHECK OUT</button>
+    <button className={styles['checkout-button']} disabled={!props.purchasable}>
+      CHECK OUT
+    </button>
   </div>
 );
 
