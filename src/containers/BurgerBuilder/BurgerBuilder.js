@@ -32,8 +32,8 @@ class BurgerBuilder extends Component {
       .reduce((sum, element) => {
         return sum + element;
       }, 0);
-      
-      this.setState({purchasable: total > 0})
+
+    this.setState({ purchasable: total > 0 });
   }
 
   addIngredient = (type) => {
@@ -73,6 +73,7 @@ class BurgerBuilder extends Component {
 
     return (
       <React.Fragment>
+        <Modal />
         <Burger ingredients={this.state.ingredients} />
         <BuildControls
           addIngredient={this.addIngredient}
