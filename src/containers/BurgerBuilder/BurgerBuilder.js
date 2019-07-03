@@ -63,6 +63,10 @@ class BurgerBuilder extends Component {
     this.updatePurchaseState(updatedIngredients);
   };
 
+  orderableHandler = () => {
+    this.setState({ orderable: true });
+  };
+
   render() {
     // Ingredients copy to check how many of each ingredient
     const disabledInfo = {
@@ -76,7 +80,7 @@ class BurgerBuilder extends Component {
     return (
       <React.Fragment>
         <Modal>
-          <OrderSummary ingredients={this.state.ingredients}/>
+          <OrderSummary ingredients={this.state.ingredients} />
         </Modal>
         <Burger ingredients={this.state.ingredients} />
         <BuildControls
