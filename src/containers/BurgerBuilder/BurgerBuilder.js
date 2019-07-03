@@ -26,7 +26,7 @@ class BurgerBuilder extends Component {
     orderable: false,
   };
 
-  updatePurchaseState(ingredients) {
+  updatePurchaseState = (ingredients) => {
     const total = Object.keys(ingredients)
       .map((key) => {
         return ingredients[key];
@@ -88,7 +88,7 @@ class BurgerBuilder extends Component {
           removeIngredient={this.removeIngredient}
           disabled={disabledInfo}
           price={this.state.totalPrice}
-          purchasable={this.purchasable}
+          purchasable={this.updatePurchaseState}
           orderable={this.orderableHandler}
         />
       </React.Fragment>
