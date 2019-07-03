@@ -24,7 +24,11 @@ const buildControls = (props) => (
       />
     ))}
 
-    <button onClick={props.orderableHandler} className={styles['checkout-button']} disabled={!props.purchasable}>
+    <button 
+      onClick={props.orderableHandler} 
+      className={styles['checkout-button']} 
+      {/* If there are no ingredients in the BurgerBuilder state, button is disabled*/}
+      disabled={!props.purchasable}>
       CHECK OUT
     </button>
   </div>
