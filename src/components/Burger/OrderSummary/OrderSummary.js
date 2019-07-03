@@ -1,6 +1,7 @@
 import React from 'react';
 
 const OrderSummary = (props) => {
+  // The props being passed down come in object form, this converts that to an array to map over and display the list items
   const summary = Object.keys(props.ingredients).map((ingredient) => {
     return (
       <li key={ingredient}>
@@ -8,6 +9,7 @@ const OrderSummary = (props) => {
       </li>
     );
   });
+  
   return (
     <React.Fragment>
       <h3>Your Order</h3>
