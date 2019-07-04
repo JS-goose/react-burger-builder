@@ -1,4 +1,4 @@
-#Modal-container {
+.Modal-container {
   position: fixed;
   z-index: 500;
   width: 70%;
