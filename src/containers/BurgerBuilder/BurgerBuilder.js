@@ -64,6 +64,7 @@ class BurgerBuilder extends Component {
   };
 
   orderableHandler = () => {
+    console.log('you can order hamburger now');
     this.setState({ orderable: true });
   };
 
@@ -89,7 +90,7 @@ class BurgerBuilder extends Component {
           disabled={disabledInfo}
           price={this.state.totalPrice}
           purchasable={this.state.purchasable}
-          orderable={this.orderableHandler}
+          orderableHandler={this.orderableHandler}
         />
       </React.Fragment>
     );
