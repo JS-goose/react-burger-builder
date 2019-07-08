@@ -10,11 +10,6 @@
   transition: all 0.3s ease-out;
 }
 
-/* .Modal-container-hidden {
-  transform: translateY(-100vh);
-  opacity: 0;
-} */
-
 @media (min-width: 600px) {
   #Modal-container {
     width: 500px;
