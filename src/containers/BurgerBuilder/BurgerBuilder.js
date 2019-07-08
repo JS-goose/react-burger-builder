@@ -64,7 +64,6 @@ class BurgerBuilder extends Component {
   };
 
   orderableHandler = () => {
-    console.log('you can order hamburger now');
     this.setState({ orderable: true });
   };
 
@@ -80,7 +79,7 @@ class BurgerBuilder extends Component {
 
     return (
       <React.Fragment>
-        <Modal show={this.orderableHandler}>
+        <Modal show={this.state.orderable}>
           <OrderSummary ingredients={this.state.ingredients} />
         </Modal>
         <Burger ingredients={this.state.ingredients} />
