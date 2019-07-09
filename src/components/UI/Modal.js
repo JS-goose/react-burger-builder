@@ -1,8 +1,11 @@
 import React from 'react';
 import styles from './Modal.module.css';
+import Backdrop from './Backdrop/Backdrop';
 
 const Modal = (props) => {
   return (
+    <React.Fragment>
+    <Backdrop show={props.show}/>
     <div
       className={styles['Modal-container']}
       style={{
@@ -12,6 +15,7 @@ const Modal = (props) => {
     >
       {props.children}
     </div>
+    </React.Fragment>
   );
 };
 
