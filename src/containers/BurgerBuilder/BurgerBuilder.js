@@ -36,7 +36,7 @@ class BurgerBuilder extends Component {
       }, 0);
 
     this.setState({ purchasable: total > 0 });
-  }
+  };
 
   addIngredient = (type) => {
     const updatedIngCount = this.state.ingredients[type] + 1;
@@ -67,6 +67,10 @@ class BurgerBuilder extends Component {
     this.setState({ orderable: true });
   };
 
+  displayModal = () => {
+    this.setState({ orderable: false });
+  };
+
   render() {
     // Ingredients copy to check how many of each ingredient
     const disabledInfo = {
@@ -79,7 +83,7 @@ class BurgerBuilder extends Component {
 
     return (
       <React.Fragment>
-        <Modal show={this.state.orderable}>
+        <Modal show={this.state.orderable} displayModal={this.displayModal}>
           <OrderSummary ingredients={this.state.ingredients} />
         </Modal>
         <Burger ingredients={this.state.ingredients} />

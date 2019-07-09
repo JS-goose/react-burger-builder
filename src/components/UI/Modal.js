@@ -5,7 +5,7 @@ import Backdrop from './Backdrop/Backdrop';
 const Modal = (props) => {
   return (
     <React.Fragment>
-    <Backdrop show={props.show}/>
+    <Backdrop show={props.show} displayModal={props.displayModal}/>
     <div
       className={styles['Modal-container']}
       style={{
