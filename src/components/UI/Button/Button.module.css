@@ -23,3 +23,9 @@
 .Cancel {
     background-color: red;
 }
+
+.Continue:hover, .Cancel:hover {
+    font-weight: bold;
+    text-decoration: underline;
+    transition: all 0.1s ease-in;
+}
