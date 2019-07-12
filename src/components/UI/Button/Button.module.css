@@ -9,12 +9,17 @@
     box-sizing: border-box;
     box-shadow: 1px 1px 10px rgba(255, 165, 0, 0.5);
     cursor: pointer;
+    width: 100px;
 }
 
 .Button:first-of-type {
-    margin-right: 20px;
+    margin-right: 40px;
 }
 
-.Button:last-of-type {
-    margin-left: 20px;
+.Continue {
+    background-color: green;
+}
+
+.Cancel {
+    background-color: red;
 }
