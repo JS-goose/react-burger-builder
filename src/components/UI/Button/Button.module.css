@@ -14,3 +14,7 @@
 .Button:first-of-type {
     margin-right: 20px;
 }
+
+.Button:last-of-type {
+    margin-left: 20px;
+}
