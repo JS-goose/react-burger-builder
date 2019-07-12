@@ -13,7 +13,6 @@ const OrderSummary = (props) => {
   
   return (
     <React.Fragment>
-      {console.log(props)}
       <h3>Order Summary</h3>
       <p>Your tasty burger with the fresh ingredients listed below:</p>
       <ul>
