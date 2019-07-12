@@ -18,8 +18,8 @@ const OrderSummary = (props) => {
       <ul>
         {summary}
       </ul>  
-      <Button>Continue</Button>  
-      <Button>Cancel</Button>  
+      <Button btnType='Continue'>Continue</Button>  
+      <Button btnType='Cancel'>Cancel</Button>  
     </React.Fragment>
   );
 };
