@@ -13,11 +13,13 @@ const OrderSummary = (props) => {
   
   return (
     <React.Fragment>
+      {console.log(props)}
       <h3>Order Summary</h3>
       <p>Your tasty burger with the fresh ingredients listed below:</p>
       <ul>
         {summary}
-      </ul>  
+      </ul> 
+      <p>Total Price: ${props.price.toFixed(2)}</p> 
       <Button btnType='Continue'clicked={props.continuePurchaseHandler}>Continue</Button>  
       <Button btnType='Cancel' clicked={props.cancelPurchaseHandler}>Cancel</Button>  
     </React.Fragment>
