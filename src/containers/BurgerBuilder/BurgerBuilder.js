@@ -71,6 +71,10 @@ class BurgerBuilder extends Component {
     this.setState({ orderable: false });
   };
 
+  continuePurchaseHandler = () => {
+    alert('You may continue!');
+  };
+
   render() {
     // Ingredients copy to check how many of each ingredient
     const disabledInfo = {
@@ -84,7 +88,11 @@ class BurgerBuilder extends Component {
     return (
       <React.Fragment>
         <Modal show={this.state.orderable} cancelPurchaseHandler={this.cancelPurchaseHandler}>
-          <OrderSummary ingredients={this.state.ingredients} />
+          <OrderSummary
+            ingredients={this.state.ingredients}
+            cancelPurchaseHandler={this.cancelPurchaseHandler}
+            continuePurchaseHandler={this.continuePurchaseHandler}
+          />
         </Modal>
         <Burger ingredients={this.state.ingredients} />
         <BuildControls
