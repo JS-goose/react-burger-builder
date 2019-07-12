@@ -67,7 +67,7 @@ class BurgerBuilder extends Component {
     this.setState({ orderable: true });
   };
 
-  displayModal = () => {
+  cancelPurchaseHandler = () => {
     this.setState({ orderable: false });
   };
 
@@ -83,7 +83,7 @@ class BurgerBuilder extends Component {
 
     return (
       <React.Fragment>
-        <Modal show={this.state.orderable} displayModal={this.displayModal}>
+        <Modal show={this.state.orderable} cancelPurchaseHandler={this.cancelPurchaseHandler}>
           <OrderSummary ingredients={this.state.ingredients} />
         </Modal>
         <Burger ingredients={this.state.ingredients} />
