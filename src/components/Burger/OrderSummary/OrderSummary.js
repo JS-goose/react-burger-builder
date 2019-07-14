@@ -6,7 +6,7 @@ const OrderSummary = (props) => {
   const summary = Object.keys(props.ingredients).map((ingredient) => {
     return (
       <li key={ingredient}>
-        <span style={{ textDecoration: 'underline', fontWeight: 700 }}>{ingredient}</span>:{' '}
+        <span style={{ fontWeight: 700 }}>{ingredient}</span>:{' '}
         {props.ingredients[ingredient]}
       </li>
     );
@@ -14,7 +14,7 @@ const OrderSummary = (props) => {
 
   return (
     <React.Fragment>
-      <h3>Order Summary</h3>
+      <h3 style={{color: 'rgb(228, 133, 10)', textDecoration: 'underline'}}>Order Summary</h3>
       <p>Your tasty burger with the fresh ingredients listed below:</p>
       <ul>{summary}</ul>
       <p>Total Price: ${props.price.toFixed(2)}</p>
