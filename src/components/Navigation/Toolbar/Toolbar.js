@@ -3,7 +3,7 @@ import styles from './Toolbar.module.css';
 
 export default function Toolbar(props) {
     return (
-        <header>
+        <header className={styles['Toolbar']}>
             {/*These are placeholders*/}
             <div>Menu</div>
             <div>Logo</div>
