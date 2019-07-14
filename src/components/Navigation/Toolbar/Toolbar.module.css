@@ -20,6 +20,9 @@
 .Toolbar ul {
     display: flex;
     list-style: none;
+    position: absolute;
+    right: 0;
+    margin-right: 20px;
 }
 
 .Toolbar ul li {
