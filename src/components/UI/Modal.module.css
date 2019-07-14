@@ -13,6 +13,14 @@
   background-color: rgba(255, 255, 255, 0.8);
 }
 
+.Modal-container ul {
+  list-style: decimal;
+}
+
+.Modal-container ul li {
+  text-transform: capitalize;
+}
+
 @media (min-width: 600px) {
   #Modal-container {
     width: 500px;
