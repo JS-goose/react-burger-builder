@@ -7,8 +7,8 @@ export default function Toolbar(props) {
     return (
         <header className={styles['Toolbar']}>
             {/*These are placeholders*/}
-            <div>Menu</div>
             <img src={logo} alt="a food stand icon"/>
+            <div>Menu</div>
             <nav>
                 <ul>
                     <li>One</li>
