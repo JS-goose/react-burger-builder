@@ -6,7 +6,6 @@ const layout = (props) => {
   return (
     <React.Fragment>
       <Toolbar />
-      <div>SideDrawer</div>
       <main id={styles['content']}>{props.children}</main>
     </React.Fragment>
   );
