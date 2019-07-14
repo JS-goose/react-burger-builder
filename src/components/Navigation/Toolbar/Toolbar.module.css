@@ -9,6 +9,7 @@
     align-items: center;
     background-color: orange;
     box-sizing: border-box;
+    z-index: 90;
 }
 
 .Toolbar nav {
