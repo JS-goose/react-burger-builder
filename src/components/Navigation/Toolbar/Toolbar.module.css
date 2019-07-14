@@ -29,6 +29,10 @@
     padding: 0;
 }
 
+.Toolbar img {
+    height: 100%;
+}
+
 .Toolbar nav {
     height: 100%;
 }
