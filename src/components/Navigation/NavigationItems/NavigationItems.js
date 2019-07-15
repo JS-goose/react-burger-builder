@@ -3,7 +3,7 @@ import styles from './NavigationItems.module.css';
 
 export default function NavigationItems() {
   return (
-    <ul>
+    <ul id={styles['navigationItems-list']}>
       <li>
         <a href="/">Home</a>
         <a href="/">Food Menu</a>
