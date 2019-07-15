@@ -1,15 +1,14 @@
 import React from 'react';
+import NavigationItem from './NavigationItem/NavigationItem';
 import styles from './NavigationItems.module.css';
 
 export default function NavigationItems() {
   return (
     <ul id={styles['navigationItems-list']}>
-      <li>
-        <a href="/">Home</a>
-        <a href="/">Food Menu</a>
-        <a href="/">About</a>
-        <a href="/">Contact Us</a>
-      </li>
+      <NavigationItem>Home</NavigationItem>
+      <NavigationItem>Burger Builder</NavigationItem>
+      <NavigationItem>About Us</NavigationItem>
+      <NavigationItem>Contact Us</NavigationItem>
     </ul>
   );
 }
