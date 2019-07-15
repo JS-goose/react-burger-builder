@@ -6,17 +6,3 @@
   margin-right: 20px;
   align-items: center;
 }
-
-#navigationItems-list li a {
-  padding-right: 20px;
-  color: inherit;
-  font-weight: 600;
-}
-
-#navigationItems-list li a:last-of-type {
-  padding: 0;
-}
-
-#navigationItems-list li a:hover {
-    text-decoration: none;
-}

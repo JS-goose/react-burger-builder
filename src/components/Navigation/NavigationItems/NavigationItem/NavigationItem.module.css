@@ -1,0 +1,9 @@
+.navigationItem {
+  padding-right: 20px;
+  color: inherit;
+  font-weight: 600;
+}
+
+.navigationItem:hover {
+  text-decoration: none;
+}
