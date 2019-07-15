@@ -6,6 +6,9 @@ export default function NavigationItems() {
     <ul>
       <li>
         <a href="/">Home</a>
+        <a href="/">Food Menu</a>
+        <a href="/">About</a>
+        <a href="/">Contact Us</a>
       </li>
     </ul>
   );
