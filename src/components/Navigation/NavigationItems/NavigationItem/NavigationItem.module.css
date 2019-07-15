@@ -1,9 +1,15 @@
 .navigationItem {
+  text-decoration: none;
   padding-right: 20px;
+  padding-left: 20px;
   color: inherit;
   font-weight: 600;
+  box-sizing: border-box;
+  display: flex;
 }
 
-.navigationItem:hover {
-  text-decoration: none;
+.navigationItem:hover,
+.navigationItem:active,
+.navigationItem .active {
+  background-color: orange;
 }
