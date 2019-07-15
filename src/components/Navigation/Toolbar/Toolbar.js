@@ -1,4 +1,5 @@
 import React from 'react'
+import NavigationItems from '../NavigationItems/NavigationItems'
 import styles from './Toolbar.module.css';
 // Icon from Darius Dan on https://flaticon.com
 import logo from '../../../assets/food-stand.svg'
@@ -10,11 +11,7 @@ export default function Toolbar(props) {
             <img src={logo} alt="a food stand icon"/>
             <div>Menu</div>
             <nav>
-                <ul>
-                    <li>One</li>
-                    <li>Two</li>
-                    <li>Three</li>
-                </ul>
+                <NavigationItems />
             </nav>
         </header>
     )
