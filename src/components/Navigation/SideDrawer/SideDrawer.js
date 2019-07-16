@@ -7,7 +7,7 @@ const SideDrawer = () => {
     return (
         <section className={styles.SideDrawerContainer}>
            <img src={logo} alt="a food stand logo"/> 
-           <nav>
+           <nav className={styles.SideDrawerNav}>
                <NavigationItems />
            </nav>
         </section>
