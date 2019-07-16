@@ -5,12 +5,12 @@ import styles from './SideDrawer.module.css';
 
 const SideDrawer = () => {
     return (
-        <div>
+        <section className={styles.SideDrawerContainer}>
            <img src="{logo}" alt="a food stand logo"/> 
            <nav>
                <NavigationItems />
            </nav>
-        </div>
+        </section>
     )
 }
 
