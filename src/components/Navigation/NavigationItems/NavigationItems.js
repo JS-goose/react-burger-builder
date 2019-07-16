@@ -7,8 +7,8 @@ export default function NavigationItems() {
     <ul id={styles['navigationItems-list']}>
       <NavigationItem link='/'>Home</NavigationItem>
       <NavigationItem link='/' active>Burger Builder</NavigationItem>
-      <NavigationItem link='/'>About Us</NavigationItem>
-      <NavigationItem link='/'>Contact Us</NavigationItem>
+      <NavigationItem link='/'>About</NavigationItem>
+      <NavigationItem link='/'>Contact</NavigationItem>
     </ul>
   );
 }
