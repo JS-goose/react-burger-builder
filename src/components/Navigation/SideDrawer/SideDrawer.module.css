@@ -1,4 +1,4 @@
-.SideDrawer-container {
+.SideDrawerContainer {
     position: fixed;
     width: 280px;
     max-width: 70%;
@@ -21,7 +21,7 @@
 }
 
 @media (min-width: 500px) {
-    .SideDrawer-container {
+    .SideDrawerContainer {
         display: none;
     }
 }
