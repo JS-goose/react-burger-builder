@@ -32,3 +32,22 @@
         display: none;
     }
 }
+
+
+@media (max-width: 500px) {
+    .sideDrawerNav ul {
+      flex-direction: column;
+      left: 0;
+      margin-left: -30px;
+    }
+
+    .sideDrawerNav a:hover {
+        border-right: 4px solid rgb(228, 133, 10);
+        border-top: none;
+        border-bottom: none;
+    }
+
+    .SideDrawerContainer img {
+        margin-left: 9%;
+    }
+  }

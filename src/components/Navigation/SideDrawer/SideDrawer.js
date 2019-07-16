@@ -6,8 +6,8 @@ import styles from './SideDrawer.module.css';
 const SideDrawer = () => {
     return (
         <section className={styles.SideDrawerContainer}>
-           <img src={logo} alt="a food stand logo"/> 
-           <nav className={styles.SideDrawerNav}>
+           <img src={logo} alt="a food stand logo"/>
+           <nav className={styles.sideDrawerNav}>
                <NavigationItems />
            </nav>
         </section>
