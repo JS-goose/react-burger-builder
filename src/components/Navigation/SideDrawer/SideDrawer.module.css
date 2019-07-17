@@ -49,7 +49,8 @@
   .sideDrawerNav a.active {
     border-top: transparent;
     border-bottom: transparent;
-    color: rgb(13, 76, 212);
+    background: linear-gradient(#f08e4a, #e27b36);
+    color: white;
   }
 
   .SideDrawerContainer img {
