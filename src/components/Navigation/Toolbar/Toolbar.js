@@ -10,7 +10,7 @@ export default function Toolbar(props) {
             {/*These are placeholders*/}
             <img src={logo} alt="a food stand icon"/>
             <div>Menu</div>
-            <nav>
+            <nav className={styles.showOnDesktop}>
                 <NavigationItems />
             </nav>
         </header>
