@@ -13,7 +13,9 @@
     border-top: 1px solid rgb(228, 133, 10);
 }
 
-.navigationItem a:active,
-.navigationItem a.active {
-  background-color: rgb(228, 133, 10);
+@media (min-width: 500px) {
+  .navigationItem a:active,
+  .navigationItem a.active {
+    background-color: rgb(228, 133, 10);
+  }
 }
