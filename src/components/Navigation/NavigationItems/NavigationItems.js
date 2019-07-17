@@ -8,7 +8,6 @@ export default function NavigationItems() {
       <NavigationItem link='/'>Home</NavigationItem>
       <NavigationItem link='/' active>Burger Builder</NavigationItem>
       <NavigationItem link='/'>About</NavigationItem>
-      <NavigationItem link='/'>Contact</NavigationItem>
     </ul>
   );
 }
