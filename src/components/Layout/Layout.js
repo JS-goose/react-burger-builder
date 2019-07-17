@@ -4,6 +4,14 @@ import SideDrawer from '../Navigation/SideDrawer/SideDrawer';
 import styles from './Layout.module.css';
 
 class Layout extends Component {
+  state = {
+    showSideDrawer: true,
+  }
+
+  sideDrawerClosingHandler = () => {
+
+  }
+
   render() {
     return (
       <React.Fragment>
