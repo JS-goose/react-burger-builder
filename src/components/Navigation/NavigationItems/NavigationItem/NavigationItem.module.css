@@ -1,4 +1,4 @@
-.navigationItem a{
+.navigationItem a {
   text-decoration: none;
   padding-right: 20px;
   padding-left: 20px;
@@ -10,12 +10,10 @@
 }
 
 .navigationItem a:hover {
-    border-top: 1px solid rgb(228, 133, 10);
+  border-top: 1px solid rgb(228, 133, 10);
 }
 
-@media (min-width: 500px) {
-  .navigationItem a:active,
-  .navigationItem a.active {
-    background-color: rgb(228, 133, 10);
-  }
+.navigationItem a:active,
+.navigationItem a.active {
+  background: linear-gradient(#f08e4a, #e27b36);
 }
