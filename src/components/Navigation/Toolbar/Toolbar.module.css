@@ -19,7 +19,7 @@
 
 .Toolbar img {
     height: 100%;
-    background-color: rgb(228, 133, 10);
+    background: linear-gradient(#f08e4a, #e27b36);
     border:1px solid white;
     box-sizing: border-box;
 }
