@@ -7,7 +7,7 @@ import styles from './SideDrawer.module.css';
 const SideDrawer = (props) => {
   return (
     <React.Fragment>
-      <Backdrop show clicked={props.closed}/>
+      <Backdrop show={props.open} clicked={props.closed}/>
       <section className={styles.SideDrawerContainer}>
         <img src={logo} alt="a food stand logo" />
         <nav className={styles.sideDrawerNav}>
