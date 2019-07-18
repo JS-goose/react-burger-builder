@@ -9,14 +9,14 @@ class Layout extends Component {
   }
 
   sideDrawerClosingHandler = () => {
-
+    this.setState({showSideDrawer: !this.showSideDrawer})
   }
 
   render() {
     return (
       <React.Fragment>
         <Toolbar />
-        <SideDrawer />
+        <SideDrawer closed={this.sideDrawerClosingHandler}/>
         <main id={styles['content']}>{this.props.children}</main>
       </React.Fragment>
     );

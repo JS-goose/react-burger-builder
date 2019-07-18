@@ -4,10 +4,10 @@ import Backdrop from '../../UI/Backdrop/Backdrop';
 import logo from '../../../assets/food-stand.svg';
 import styles from './SideDrawer.module.css';
 
-const SideDrawer = () => {
+const SideDrawer = (props) => {
   return (
     <React.Fragment>
-      <Backdrop show/>
+      <Backdrop show clicked={props.closed}/>
       <section className={styles.SideDrawerContainer}>
         <img src={logo} alt="a food stand logo" />
         <nav className={styles.sideDrawerNav}>
