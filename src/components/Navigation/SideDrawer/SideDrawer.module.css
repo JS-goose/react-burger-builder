@@ -12,6 +12,12 @@
   transition: transform 0.5s ease-out;
 }
 
+.SideDrawerContainer button {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
 .SideDrawerContainer img {
   height: 10%;
   background: linear-gradient(#f08e4a, #e27b36);
