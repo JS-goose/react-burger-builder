@@ -1,0 +1,24 @@
+#menuButton {
+    font-size: 1.1rem;
+    color: whitesmoke;
+    margin-left: 10px;
+    padding: 10px;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+    box-sizing: border-box;
+    text-decoration: underline;
+}
+
+#menuButton:hover {
+    background: linear-gradient(#f08e4a, #e27b36);
+    border: 1px solid whitesmoke;
+    border-radius: 2px;
+    text-decoration: none;
+}
+
+@media (min-width: 500px) {
+    #menuButton {
+        display: none;
+    }
+}
