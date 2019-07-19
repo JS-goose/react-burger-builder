@@ -11,7 +11,7 @@ export default function Toolbar(props) {
       {/*These are placeholders*/}
       <img src={logo} alt="a food stand icon" />
       {/* <div onClick={props.closed}>Menu</div> */}
-      <MenuToggle toggleShow={props.closed} />
+      <MenuToggle clicked={props.closed} />
       <nav className={styles.showOnDesktop}>
         <NavigationItems />
       </nav>
