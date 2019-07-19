@@ -5,7 +5,7 @@ import styles from './MenuToggle.module.css';
 export default function MenuToggle(props) {
     return (
         <article>
-            <Button onClick={props.clicked}>Menu</Button>
+            <Button id={styles.menuButton} onClick={props.clicked}>Menu</Button>
         </article>
     )
 }
