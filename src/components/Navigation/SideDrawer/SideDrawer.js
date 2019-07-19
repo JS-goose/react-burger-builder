@@ -17,6 +17,7 @@ const SideDrawer = (props) => {
         <nav className={styles.sideDrawerNav}>
           <NavigationItems />
         </nav>
+        <button>Close</button>
       </section>
     </React.Fragment>
   );
