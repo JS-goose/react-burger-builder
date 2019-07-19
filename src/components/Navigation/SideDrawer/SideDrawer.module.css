@@ -17,6 +17,12 @@
   position: absolute;
   top: 0;
   right: 0;
+  cursor: pointer;
+  background-color: white;
+  border: 1px solid rgb(190, 190, 190);
+  border-radius: 2px;
+  margin: 5px 5px 0 0;
+  padding: 10px 12px;
 }
 
 .SideDrawerContainer img {
