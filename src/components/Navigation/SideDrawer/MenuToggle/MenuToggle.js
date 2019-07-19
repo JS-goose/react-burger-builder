@@ -1,9 +1,11 @@
-import React from 'react'
+import React from 'react';
+import Button from '../../../UI/Button/Button'
+import styles from './MenuToggle.module.css';
 
 export default function MenuToggle(props) {
     return (
         <article>
-            <button onClick={props.clicked}>Menu</button>
+            <Button onClick={props.clicked}>Menu</Button>
         </article>
     )
 }
