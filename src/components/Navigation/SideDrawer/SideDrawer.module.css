@@ -21,8 +21,17 @@
   background-color: white;
   border: 1px solid rgb(190, 190, 190);
   border-radius: 2px;
-  margin: 5px 5px 0 0;
+  margin: 10px 10px 0 0;
   padding: 10px 12px;
+  font-size: 1.03rem;
+  font-weight: 600;
+}
+
+.SideDrawerContainer button:hover {
+  color: white;
+  background: linear-gradient(#f08e4a, #e27b36);
+  box-shadow: 1px 1px 20px #f08e4a;
+  border: 1px solid rgb(80, 80, 80);
 }
 
 .SideDrawerContainer img {
@@ -35,6 +44,7 @@
 .open {
   transform: translateX(0);
   box-shadow: 1px 5px 50px black;
+  border-right: 1px solid #f08e4a;
 }
 
 .close {
