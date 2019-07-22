@@ -62,3 +62,16 @@
     transform: scale(1);
   }
 }
+
+@media (max-width: 900px) {
+  .BuildControls {
+    width: 90%;
+  }
+}
+
+@media (max-width: 500px) {
+  .BuildControls {
+    width: 96%;
+    margin-top: -8%;
+  }
+}

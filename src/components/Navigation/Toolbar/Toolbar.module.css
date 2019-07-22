@@ -5,7 +5,6 @@
   position: fixed;
   top: 0;
   left: 0;
-  /* justify-content: space-between; */
   align-items: center;
   color: rgb(228, 228, 228);
   font-size: 1.1rem;
@@ -31,5 +30,9 @@
 @media (max-width: 499px) {
   .showOnDesktop {
     display: none;
+  }
+
+  .Toolbar {
+    justify-content: space-between;
   }
 }
