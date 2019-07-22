@@ -1,7 +1,7 @@
 .Modal-container {
   position: fixed;
   z-index: 500;
-  width: 30%;
+  width: 500px;
   text-align: center;
   border: 1px solid #8a7063;
   border-radius: 2px;
@@ -21,9 +21,9 @@
   text-transform: capitalize;
 }
 
-@media (min-width: 600px) {
-  #Modal-container {
-    width: 500px;
-    left: calc(50% - 250px);
+@media (max-width: 600px) {
+  .Modal-container {
+    width: 90%;
+    left: 5%;
   }
 }
