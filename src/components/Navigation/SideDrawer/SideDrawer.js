@@ -1,6 +1,7 @@
 import React from 'react';
 import NavigationItems from '../NavigationItems/NavigationItems';
 import Backdrop from '../../UI/Backdrop/Backdrop';
+import PropTypes from 'prop-types';
 import logo from '../../../assets/food-stand.svg';
 import styles from './SideDrawer.module.css';
 
@@ -22,5 +23,9 @@ const SideDrawer = (props) => {
     </React.Fragment>
   );
 };
+
+SideDrawer.propTypes = {
+  type: PropTypes.string.isRequired,
+}
 
 export default SideDrawer;
